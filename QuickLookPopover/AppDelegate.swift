@@ -18,6 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, QLPreviewPanelDataSource {
     @IBAction func showPopover(_ sender: AnyObject) {
         let popover = NSPopover()
         popover.contentViewController = ViewController()
+        popover.behavior = NSPopover.Behavior.transient;
         popover.show(relativeTo: NSZeroRect, of: window.contentView!, preferredEdge: .maxX)
     }
     
