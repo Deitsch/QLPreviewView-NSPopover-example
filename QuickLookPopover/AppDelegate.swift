@@ -51,7 +51,6 @@ extension AppDelegate: QLPreviewPanelDataSource {
     override func beginPreviewPanelControl(_ panel: QLPreviewPanel!) {
         panel.dataSource = self
         panel.delegate = self
-        panel.currentPreviewItemIndex = 0
     }
 
     override func endPreviewPanelControl(_ panel: QLPreviewPanel!) {
