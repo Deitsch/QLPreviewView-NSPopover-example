@@ -1,3 +1,3 @@
-# QLPreviewView-NSPopover-example
+# QLPreviewView-example
 
-Example Swift 4.1 project demonstrating [this StackOverflow answer](https://stackoverflow.com/a/24341301/446039) regarding the embedding of a `QLPreviewView` inside a `NSPopover`.
+Exmaple on how to use QLPreview regular and in a popover
