@@ -11,14 +11,16 @@ import Quartz
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     @IBOutlet weak var window: NSWindow!
+    @IBOutlet var  popover: NSPopover!
+    
     let url: URL! = Bundle.main.url(forResource: "Yosemite", withExtension: "jpg")
 //    let url: URL! = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/David_von_Michelangelo.jpg/313px-David_von_Michelangelo.jpg")!
 //    let url: URL! = URL(fileURLWithPath: "/Users/.../catbage.png")
     
     @IBAction func showPopover(_ sender: AnyObject) {
-        let popover = NSPopover()
+        popover = NSPopover()
         popover.contentViewController = ViewController()
         popover.behavior = NSPopover.Behavior.transient;
         popover.show(relativeTo: NSZeroRect, of: window.contentView!, preferredEdge: .maxX)
