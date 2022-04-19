@@ -11,7 +11,6 @@ import Quartz
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
     @IBOutlet weak var window: NSWindow!
     @IBOutlet var  popover: NSPopover!
     
@@ -19,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 //    let url: URL! = URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/David_von_Michelangelo.jpg/313px-David_von_Michelangelo.jpg")!
 //    let url: URL! = URL(fileURLWithPath: "/Users/.../catbage.png")
     
-    @IBAction func showPopover(_ sender: AnyObject) {
+    @IBAction func showPopover(_ sender: NSButton) {
         popover = NSPopover()
         popover.contentViewController = ViewController()
         popover.behavior = NSPopover.Behavior.transient;
